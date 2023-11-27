@@ -9,6 +9,7 @@ This is the official PyTorch implementation of our paper:
 > Unsupervised domain adaptation is a critical challenge in the field of point cloud analysis, as models trained on one set of data often struggle to perform well in new scenarios due to domain shifts. Previous works tackle the problem by using adversarial training or self-supervised learning for feature extractor adaptation, but ensuring that features extracted from the target domain can be distinguished by the source-supervised classifier remains challenging. In this work, we propose a novel approach called progressive target-styled feature augmentation (PTSFA). Unlike previous works that focus on feature extractor adaptation, our PTSFA approach focuses on classifier adaptation. It aims to empower the classifier to recognize target-styled source features and progressively adapt to the target domain. To enhance the reliability of predictions within the PTSFA framework and encourage discriminative feature extraction, we further introduce a new intermediate domain approaching (IDA) strategy. We validate our method on the benchmark datasets, where our method achieves new state-of-the-art performance.
 
 
+
 ## Getting Started
 
 ### Installation
@@ -16,17 +17,20 @@ This is the official PyTorch implementation of our paper:
 Please follow GAST to prepare the environment: https://github.com/zou-longkun/GAST.
 
 
+
 ### Dataset:
 
 Our code supports PointDA-10 dataset, GraspNetPC-10 dataset, and PointSegDA dataset.
 
-Please download PointDA-10 dataset at https://drive.google.com/file/d/1-LfJWL5geF9h0Z2QpdTL0n4lShy8wy2J/view?usp=sharing.
-Please download GraspNetPC-10 dataset at https://drive.google.com/file/d/1VVHmsSToFMVccge-LsYJW67IS94rNxWR/view?usp=sharing.
-Please download PointSegDA dataset at https://drive.google.com/uc?id=1dkU-8Y8K7yZaZjwelVUsxAbBf7JmOX9j.
+- Please download PointDA-10 dataset at https://drive.google.com/file/d/1-LfJWL5geF9h0Z2QpdTL0n4lShy8wy2J/view?usp=sharing.
+
+- Please download GraspNetPC-10 dataset at https://drive.google.com/file/d/1VVHmsSToFMVccge-LsYJW67IS94rNxWR/view?usp=sharing.
+- Please download PointSegDA dataset at https://drive.google.com/uc?id=1dkU-8Y8K7yZaZjwelVUsxAbBf7JmOX9j.
 
 Please unzip the datasets and modify the dataset path in configuration files.
 
 For example, if you put your data under the data folder like this, you can directly bash our run_test.sh file to run the code.
+```
 
 ├── data
     ├── GraspNetPointClouds
@@ -46,6 +50,9 @@ For example, if you put your data under the data folder like this, you can direc
         ├── dataloader_XXXX.py
         ├── ....
         └── grasp_datautils
+  	├── log
+  		├── XXX.txt
+  		└── XXX.txt
     ├── models 
         ├── model.py
         └── pointnet_util.py
@@ -57,6 +64,9 @@ For example, if you put your data under the data folder like this, you can direc
     ├── ....
     └── train_GTSA_seg.py
 
+```
+
+
 
 ## Usage
 
@@ -65,21 +75,21 @@ If you want to reproduce our results, please directly bash run_test.sh.
 
 To run with different settings, please modify the settings in the sh file.
 
-Note that all of our experiments are tested on 4 2080Ti GPUs or on 10 3090 GPUs.
+We have uploaded the log files in the log folder.
+
+Note that all of our experiments are tested on 4 2080Ti GPUs, on 2 A5000 GPUs or on 10 3090 GPUs.
+
+P.S.
+
+​	the current version is a bit complex, please allow me a couple of days to simply it (maybe longer), if you need.
+
 
 
 ## Citation
 
-If you find these projects useful, please consider citing:
+If you find these projects useful, please consider citing our paper.
 
-```bibtex
-@article{wang2023conflict,
-  title={Conflict-Based Cross-View Consistency for Semi-Supervised Semantic Segmentation},
-  author={Wang, Zicheng and Zhao, Zhen and Zhou, Luping and Xu, Dong and Xing, Xiaoxia and Kong, Xiangyu},
-  journal={arXiv preprint arXiv:2303.01276},
-  year={2023}
-}
-```
+
 
 
 ## Acknowledgement
