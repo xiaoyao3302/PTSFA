@@ -14,7 +14,7 @@ This is the official PyTorch implementation of our paper:
 
 ### Installation
 
-Please follow GAST to prepare the environment: https://github.com/zou-longkun/GAST.
+Please follow our requirements.txt to prepare the environment.
 
 
 
