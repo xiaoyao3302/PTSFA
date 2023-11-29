@@ -2,7 +2,7 @@
 
 This is the official PyTorch implementation of our paper:
 
-> **[Progressive Target-Styled Feature Augmentation for Unsupervised Domain Adaptation on Point Clouds](https://arxiv.org/abs/2303.01276)**
+> **[Progressive Target-Styled Feature Augmentation for Unsupervised Domain Adaptation on Point Clouds](https://arxiv.org/abs/2311.16474)**
 
 
 > **Abstract.** 
