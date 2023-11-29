@@ -13,7 +13,7 @@ tensorboardX
 
 
 
-conda create -n GTSA python=3.8
+conda create -n PTSFA python=3.8
 pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
 pip install pandas
 pip install h5py
