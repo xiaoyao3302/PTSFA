@@ -88,7 +88,14 @@ P.S.
 ## Citation
 
 If you find these projects useful, please consider citing our paper.
-
+```
+@article{wang2023progressive,
+  title={Progressive Target-Styled Feature Augmentation for Unsupervised Domain Adaptation on Point Clouds},
+  author={Wang, Zicheng and Zhao, Zhen and Wu, Yiming and Zhou, Luping and Xu, Dong},
+  journal={arXiv preprint arXiv:2311.16474},
+  year={2023}
+}
+```
 
 
 
